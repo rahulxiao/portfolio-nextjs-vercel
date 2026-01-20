@@ -3,56 +3,75 @@ import { GradientText } from "@/components/ui/gradient-text";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { MobileMenu } from "@/components/ui/mobile-menu";
 import Link from "next/link";
+import Image from "next/image";
 
 const navItems = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Skills", href: "/skills" },
     { label: "Projects", href: "/projects" },
+    { label: "Experiences", href: "/experiences" },
     { label: "Contact", href: "/contact" },
 ];
 
 export function Header() {
     return (
-        <header className="sticky top-0 z-50 w-full bg-transparent transition-all duration-300">
-            <nav className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-                <div className="flex h-20 items-center justify-between">
+        <header className="sticky top-4 z-50 w-full">
+            {/* Center wrapper */}
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                {/* Rounded floating bar */}
+                <div className="relative flex h-16 items-center justify-between rounded-full border border-zinc-200/60 bg-white/60 px-6 backdrop-blur-xl shadow-lg shadow-purple-500/10 transition-all dark:border-zinc-800/60 dark:bg-zinc-950/60">
+
+                    {/* Soft glow */}
+                    <div className="pointer-events-none absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-purple-500/10 via-blue-500/10 to-transparent blur-xl" />
+
                     {/* Logo */}
                     <Link
                         href="/"
-                        className="group flex items-center gap-2 text-2xl font-bold transition-transform hover:scale-105"
+                        className="group flex items-center gap-3 transition-transform hover:scale-[1.03]"
                     >
-                        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-purple-600 to-blue-600 shadow-lg shadow-purple-500/30 transition-all group-hover:shadow-xl group-hover:shadow-purple-500/40">
-                            <span className="text-lg font-bold text-white">R</span>
+                        <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-purple-600 to-blue-600 shadow-md shadow-purple-500/30 transition-all group-hover:shadow-lg">
+                            <Image
+                                src="/image/logo.png"
+                                alt="Rahul Biswas"
+                                width={36}
+                                height={36}
+                                className="object-cover transition-transform duration-300 group-hover:scale-110"
+                                priority
+                            />
                         </div>
-                        <GradientText gradient="purple-pink-blue">
-                            Rahul
+
+                        <GradientText
+                            gradient="purple-pink-blue"
+                            className="hidden text-lg font-bold tracking-tight sm:block"
+                        >
+                            Rahul Biswas
                         </GradientText>
                     </Link>
 
-                    {/* Desktop Navigation */}
+                    {/* Desktop Nav */}
                     <div className="hidden items-center gap-8 md:flex">
                         {navItems.map((item) => (
                             <Link
                                 key={item.label}
                                 href={item.href}
-                                className="group relative text-sm font-medium text-zinc-700 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white"
+                                className="group relative text-sm font-medium text-zinc-700 dark:text-zinc-300"
                             >
-                                {item.label}
-                                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-gradient-to-r from-purple-600 to-blue-600 transition-all group-hover:w-full" />
+                                <span className="transition-colors group-hover:text-zinc-900 dark:group-hover:text-white">
+                                    {item.label}
+                                </span>
+                                <span className="absolute -bottom-1 left-1/2 h-[2px] w-0 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-blue-600 transition-all duration-300 group-hover:w-full" />
                             </Link>
                         ))}
                     </div>
 
-                    {/* Right Side Actions */}
-                    <div className="flex items-center gap-4">
+                    {/* Right Actions */}
+                    <div className="flex items-center gap-3">
                         <ThemeToggle />
 
-                        {/* CTA Button - Desktop */}
                         <Link href="/contact">
                             <Button
                                 size="sm"
-                                className="hidden bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg shadow-purple-500/30 transition-all hover:scale-105 hover:shadow-xl hover:shadow-purple-500/40 dark:shadow-purple-500/20 dark:hover:shadow-purple-500/30 md:flex"
+                                className="hidden rounded-full bg-gradient-to-r from-purple-600 to-blue-600 px-5 text-white shadow-md shadow-purple-500/30 transition-all hover:scale-105 hover:shadow-lg md:flex"
                             >
                                 Hire Me
                             </Button>
@@ -61,7 +80,7 @@ export function Header() {
                         <MobileMenu navItems={navItems} />
                     </div>
                 </div>
-            </nav>
+            </div>
         </header>
     );
 }
