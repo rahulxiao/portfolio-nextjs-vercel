@@ -4,6 +4,8 @@ import { useState } from "react";
 import { MenuIcon, XIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import Link from "next/link";
+
 interface NavItem {
     label: string;
     href: string;
@@ -30,24 +32,27 @@ export function MobileMenu({ navItems }: { navItems: NavItem[] }) {
                 <div className="absolute left-0 right-0 top-20 animate-fade-in-down border-t border-zinc-200 bg-white/95 py-4 backdrop-blur-lg dark:border-zinc-800 dark:bg-zinc-900/95">
                     <div className="flex flex-col gap-4 px-6">
                         {navItems.map((item) => (
-                            <a
+                            <Link
                                 key={item.label}
                                 href={item.href}
                                 onClick={() => setIsOpen(false)}
                                 className="rounded-lg px-4 py-2 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-white"
                             >
                                 {item.label}
-                            </a>
+                            </Link>
                         ))}
-                        <Button
-                            size="sm"
-                            className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg shadow-purple-500/30 transition-all hover:scale-105 hover:shadow-xl hover:shadow-purple-500/40"
-                        >
-                            Hire Me
-                        </Button>
+                        <Link href="/contact" onClick={() => setIsOpen(false)}>
+                            <Button
+                                size="sm"
+                                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg shadow-purple-500/30 transition-all hover:scale-105 hover:shadow-xl hover:shadow-purple-500/40"
+                            >
+                                Hire Me
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             )}
         </div>
     );
 }
+

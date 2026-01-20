@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { MoonIcon, SunIcon } from "lucide-react";
 
 export function ThemeToggle() {
-    const [isDark, setIsDark] = useState(false);
+    const [isDark, setIsDark] = useState(true);
 
     useEffect(() => {
         setIsDark(document.documentElement.classList.contains("dark"));
