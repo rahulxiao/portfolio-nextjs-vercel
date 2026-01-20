@@ -108,9 +108,9 @@ export function ContactSection() {
                             <p className="text-sm font-bold uppercase tracking-widest text-zinc-400 mb-6">Connect with me</p>
                             <div className="flex gap-4">
                                 {[
-                                    { icon: GithubIcon, href: "#", color: "hover:text-zinc-900 dark:hover:text-white" },
-                                    { icon: LinkedinIcon, href: "#", color: "hover:text-blue-600" },
-                                    { icon: TwitterIcon, href: "#", color: "hover:text-sky-500" },
+                                    { icon: GithubIcon, href: "https://github.com/rahulxiao", color: "hover:text-zinc-900 dark:hover:text-white" },
+                                    { icon: LinkedinIcon, href: "https://www.linkedin.com/in/rahul-biswas-6a2993232/", color: "hover:text-blue-600" },
+                                    { icon: TwitterIcon, href: "https://x.com/rahulxiao", color: "hover:text-sky-500" },
                                 ].map((item, idx) => (
                                     <a
                                         key={idx}

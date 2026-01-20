@@ -14,7 +14,7 @@ export default function Home() {
       <HowItWorks />
       <GridInfo />
       <ServicesSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <NewsletterSection />
     </>
   );
