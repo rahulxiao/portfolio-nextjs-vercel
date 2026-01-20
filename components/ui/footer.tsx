@@ -57,7 +57,7 @@ export function Footer() {
 
                         <div className="flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
                             <SparklesIcon size={16} className="text-purple-500" />
-                            Built with Next.js & Framer Motion
+                            Built with Next.js
                         </div>
                     </div>
 
@@ -112,8 +112,8 @@ export function Footer() {
                         </h4>
                         <div className="flex flex-wrap gap-3">
                             <SocialLink icon={GithubIcon} label="GitHub" href="https://github.com/rahulxiao" />
-                            <SocialLink icon={LinkedinIcon} label="LinkedIn" href="https://linkedin.com" />
-                            <SocialLink icon={TwitterIcon} label="Twitter" href="https://twitter.com" />
+                            <SocialLink icon={LinkedinIcon} label="LinkedIn" href="https://www.linkedin.com/in/rahul-biswas-6a2993232/" />
+                            <SocialLink icon={TwitterIcon} label="Twitter" href="https://x.com/rahulxiao" />
                             <SocialLink icon={MailIcon} label="Email" href="mailto:rahulbiswasaiub@gmail.com" />
                         </div>
 

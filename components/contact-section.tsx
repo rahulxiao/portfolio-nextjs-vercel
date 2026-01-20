@@ -18,8 +18,8 @@ export function ContactSection() {
         {
             icon: PhoneIcon,
             title: "Phone",
-            value: "+880 1234 567 890", // Kept mask as user didn't provide phone
-            href: "tel:+8801234567890",
+            value: "+880 1735355511",
+            href: "tel:+8801735355511",
             color: "text-emerald-500",
             bg: "bg-emerald-500/10",
             hoverBg: "group-hover:bg-emerald-600",
@@ -90,7 +90,7 @@ export function ContactSection() {
                                 <div className="p-3 rounded-xl bg-orange-500/10 text-orange-500 shadow-sm">
                                     <MapPinIcon size={24} />
                                 </div>
-                                <div>
+                                {/* <div>
                                     <h4 className="font-bold text-zinc-900 dark:text-white mb-1">Office Location</h4>
                                     <p className="text-zinc-600 dark:text-zinc-400 mb-4">
                                         House #12, Road #05, Block - B<br />
@@ -99,7 +99,7 @@ export function ContactSection() {
                                     <Badge variant="outline" className="border-orange-200 text-orange-600 bg-orange-50 dark:border-orange-900/30 dark:text-orange-400 dark:bg-orange-950/20">
                                         Open 9:00 AM - 6:00 PM
                                     </Badge>
-                                </div>
+                                </div> */}
                             </div>
                         </GlassCard>
 

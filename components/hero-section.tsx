@@ -77,7 +77,7 @@ export function HeroSection() {
                         <SocialLink
                             icon={LinkedinIcon}
                             label="LinkedIn"
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/rahul-biswas-6a2993232/"
                             hoverColor="blue"
                         />
 
