@@ -16,7 +16,7 @@ function AnimatedBackground({
     return (
         <div
             className={cn(
-                "relative min-h-screen w-full bg-gradient-to-br from-zinc-50 via-white to-zinc-100 dark:from-zinc-950 dark:via-black dark:to-zinc-900",
+                "relative min-h-screen w-full bg-gradient-to-br from-zinc-50 via-zinc-50/50 to-zinc-100 dark:from-zinc-950 dark:via-black dark:to-zinc-900",
                 className
             )}
             {...props}
