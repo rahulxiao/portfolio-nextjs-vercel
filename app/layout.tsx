@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
-import { AnimatedBackground } from "@/components/ui/animated-background";
+import { AnimatedBackground, Footer } from "@/components/ui";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +31,8 @@ export default function RootLayout({
       >
         <AnimatedBackground>
           <Header />
-          <main>{children}</main>
+          <main className="min-h-screen">{children}</main>
+          <Footer />
         </AnimatedBackground>
       </body>
     </html>

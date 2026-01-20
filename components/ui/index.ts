@@ -8,3 +8,8 @@ export { GradientText } from "./gradient-text";
 export { SocialLink } from "./social-link";
 export { ScrollIndicator } from "./scroll-indicator";
 export { AnimatedBackground } from "./animated-background";
+export { GlassCard } from "./glass-card";
+export { SectionHeading } from "./section-heading";
+export { Footer } from "./footer";
+export { ThemeToggle } from "./theme-toggle";
+export { MobileMenu } from "./mobile-menu";
