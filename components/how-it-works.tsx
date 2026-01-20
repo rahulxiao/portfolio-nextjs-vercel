@@ -5,49 +5,65 @@ import Image from "next/image";
 
 const content = [
     {
-        title: "Collaborative Design",
+        title: "Understand the Problem",
         description:
-            "Work together with your team in real-time. See changes as they happen and stay on the same page. Our platform ensures that everyone is in sync, whether you're designing a new feature or refining an existing one.",
+            "I start by listening. We talk about your idea, your pain points, and what you actually want to achieve. I ask the right questions, sketch rough ideas, and think through the problem before touching any code — usually with a cup of coffee nearby.",
         content: (
-            <div className="h-full w-full flex items-center justify-center text-white">
+            <div className="h-full w-full flex items-center justify-center">
                 <Image
-                    src="/image/allimage.png"
+                    src="https://images.pexels.com/photos/3747139/pexels-photo-3747139.jpeg"
                     width={300}
                     height={300}
                     className="h-full w-full object-cover"
-                    alt="collaborative design"
+                    alt="Understanding the problem and planning"
                 />
             </div>
         ),
     },
     {
-        title: "Version Control",
+        title: "Plan & Choose the Right Stack",
         description:
-            "Experience real-time updates and never worry about losing your work. Our version control system keeps track of every change, allowing you to go back in time if needed. It's like having a time machine for your project.",
+            "Once the problem is clear, I design a simple, scalable solution. I choose tools that make sense for your use case — not what's trendy. The goal is clean architecture, smooth performance, and something that’s easy to grow later.",
         content: (
-            <div className="h-full w-full flex items-center justify-center text-white">
+            <div className="h-full w-full flex items-center justify-center">
                 <Image
-                    src="/image/allimage.png"
+                    src="https://images.pexels.com/photos/4855329/pexels-photo-4855329.jpeg"
                     width={300}
                     height={300}
                     className="h-full w-full object-cover"
-                    alt="version control"
+                    alt="Planning and tech stack selection"
                 />
             </div>
         ),
     },
     {
-        title: "Running out of content",
+        title: "Build, Break, Improve",
         description:
-            "Experience real-time updates and never worry about losing your work. No matter how much content you have, our sticky scroll reveal will keep things organized and visually engaging. It's the perfect way to tell your story.",
+            "This is where the fun starts. I build features step by step, test things early, break them, fix them, and improve them. You’ll see regular progress, and feedback is always welcome. Another coffee usually happens here.",
         content: (
-            <div className="h-full w-full flex items-center justify-center text-white">
+            <div className="h-full w-full flex items-center justify-center">
                 <Image
-                    src="/image/allimage.png"
+                    src="https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg"
                     width={300}
                     height={300}
                     className="h-full w-full object-cover"
-                    alt="content management"
+                    alt="Development and iteration process"
+                />
+            </div>
+        ),
+    },
+    {
+        title: "Polish, Ship & Stay Around",
+        description:
+            "Before launch, I make sure everything feels right — performance, responsiveness, and edge cases. After shipping, I don’t disappear. I stay around to monitor, fix, and help your product evolve as users grow.",
+        content: (
+            <div className="h-full w-full flex items-center justify-center">
+                <Image
+                    src="https://images.pexels.com/photos/3861976/pexels-photo-3861976.jpeg"
+                    width={300}
+                    height={300}
+                    className="h-full w-full object-cover"
+                    alt="Deployment, polish, and continuous improvement"
                 />
             </div>
         ),

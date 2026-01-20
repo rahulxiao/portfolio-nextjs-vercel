@@ -33,25 +33,18 @@ export function ServicesSection() {
             bg: "bg-pink-500/10",
         },
         {
-            title: "Performance Optimization",
-            description: "Optimizing your existing applications for maximum speed, accessibility, and search engine ranking.",
-            icon: CpuIcon,
-            color: "text-green-500",
-            bg: "bg-green-500/10",
-        },
-        {
-            title: "Technical Consultation",
-            description: "Providing expert advice on technology stacks, architecture, and development best practices.",
-            icon: RocketIcon,
-            color: "text-orange-500",
-            bg: "bg-orange-500/10",
-        },
-        {
-            title: "App Maintenance",
-            description: "Ongoing support and updates to ensure your applications remain secure, up-to-date, and bug-free.",
+            title: "Mobile App Development",
+            description: "Creating seamless and intuitive mobile applications for iOS and Android platforms using modern development practices.",
             icon: SmartphoneIcon,
             color: "text-cyan-500",
             bg: "bg-cyan-500/10",
+        },
+        {
+            title: "Game Development",
+            description: "Creating game in Unreal Engine and Godot Engine.",
+            icon: RocketIcon,
+            color: "text-orange-500",
+            bg: "bg-orange-500/10",
         },
     ];
 

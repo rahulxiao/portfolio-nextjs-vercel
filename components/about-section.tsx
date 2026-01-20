@@ -4,10 +4,10 @@ import { Badge } from "./ui/badge";
 
 export function AboutSection() {
     const stats = [
-        { label: "Years Experience", value: "3+" },
-        { label: "Projects Completed", value: "20+" },
+        { label: "Years Experience", value: "1+" },
+        { label: "Projects Completed", value: "3+" },
         { label: "Technologies", value: "15+" },
-        { label: "Happy Clients", value: "10+" },
+        { label: "Happy Clients", value: "3+" },
     ];
 
     return (

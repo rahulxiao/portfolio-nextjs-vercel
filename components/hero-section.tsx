@@ -4,7 +4,7 @@ import { StatusIndicator } from "@/components/ui/status-indicator";
 import { GradientText } from "@/components/ui/gradient-text";
 import { SocialLink } from "@/components/ui/social-link";
 import { ScrollIndicator } from "@/components/ui/scroll-indicator";
-import { ArrowUpRightIcon, GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
+import { ArrowUpRightIcon, GithubIcon, LinkedinIcon, MailIcon, TwitterIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import profileImage from "@/public/image/raahul_biswas.jpg";
@@ -86,6 +86,12 @@ export function HeroSection() {
                             label="Email"
                             href="mailto:rahulbiswasaiub@gmail.com"
                             hoverColor="purple"
+                        />
+                        <SocialLink
+                            icon={TwitterIcon}
+                            label="Twitter"
+                            href="https://x.com/rahulxiao"
+                            hoverColor="blue"
                         />
                     </div>
                 </div>
