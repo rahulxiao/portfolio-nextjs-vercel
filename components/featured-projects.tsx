@@ -9,19 +9,19 @@ import Link from "next/link";
 export function FeaturedProjects() {
     const featuredProjects = [
         {
-            title: "E-Commerce Platform",
-            description: "A full-featured online store with payment integration and admin dashboard.",
-            tags: ["Next.js", "TypeScript", "Stripe"],
+            title: "SaaS Portfolio Builder",
+            description: "A multi-tenant SaaS application that allows users to create and publish portfolios or storefronts. Built with clean backend architecture and Stripe integration.",
+            tags: ["Next.js", "NestJS", "PostgreSQL", "Stripe"],
             github: "https://github.com/rahulxiao",
-            demo: "https://example.com",
+            demo: "https://github.com/rahulxiao",
             image: "/image/allimage.png",
         },
         {
-            title: "Task Management App",
-            description: "A collaborative tool for teams to manage projects and track time.",
-            tags: ["React", "Node.js", "Socket.io"],
-            github: "https://github.com",
-            demo: "https://example.com",
+            title: "GreenGuestBD (Live)",
+            description: "A full-stack e-commerce experience for bonsai enthusiasts. Featuring real-time cart, checkout flow, and a robust admin dashboard.",
+            tags: ["React", "NestJS", "PostgreSQL", "TypeORM"],
+            github: "https://github.com/rahulxiao/GreenGuestBD",
+            demo: "https://github.com/rahulxiao",
             image: "/image/allimage.png",
         },
     ];

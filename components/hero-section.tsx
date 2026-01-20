@@ -5,6 +5,7 @@ import { GradientText } from "@/components/ui/gradient-text";
 import { SocialLink } from "@/components/ui/social-link";
 import { ScrollIndicator } from "@/components/ui/scroll-indicator";
 import { ArrowUpRightIcon, GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
+import Link from "next/link";
 import Image from "next/image";
 import profileImage from "@/public/image/raahul_biswas.jpg";
 
@@ -34,13 +35,13 @@ export function HeroSection() {
 
                     {/* Subtitle */}
                     <p className="mb-4 text-left text-xl font-semibold text-zinc-700 dark:text-zinc-300 sm:text-2xl md:text-3xl animate-fade-in-up [animation-delay:200ms]">
-                        Full Stack Developer & Designer
+                        Full Stack Developer & Game Developer
                     </p>
 
                     {/* Description */}
                     <p className="mb-12 text-left text-base text-zinc-600 dark:text-zinc-400 sm:text-lg md:text-xl animate-fade-in-up [animation-delay:400ms]">
-                        Crafting beautiful, performant web experiences with modern technologies.
-                        Passionate about clean code, elegant design, and solving complex problems.
+                        BSc in CSE at AIUB. Specializing in high-performance web applications and immersive game experiences.
+                        Passionate about C#, Next.js, and AI-driven solutions.
                     </p>
 
                     {/* CTA Buttons */}
@@ -49,18 +50,20 @@ export function HeroSection() {
                             size="lg"
                             className="group relative overflow-hidden bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg shadow-purple-500/30 transition-all hover:scale-105 hover:shadow-xl hover:shadow-purple-500/40 dark:shadow-purple-500/20 dark:hover:shadow-purple-500/30"
                         >
-                            View My Work
+                            View Projects
                             <ArrowUpRightIcon className="ml-1 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                         </Button>
 
-                        <Button
-                            size="lg"
-                            variant="outline"
-                            className="group border-2 border-zinc-300 bg-white/80 backdrop-blur-sm transition-all hover:scale-105 hover:border-zinc-400 hover:bg-white dark:border-zinc-700 dark:bg-zinc-900/80 dark:hover:border-zinc-600 dark:hover:bg-zinc-900"
-                        >
-                            Get in Touch
-                            <MailIcon className="ml-1 transition-transform group-hover:scale-110" />
-                        </Button>
+                        <Link href="/contact">
+                            <Button
+                                size="lg"
+                                variant="outline"
+                                className="group border-2 border-zinc-300 bg-white/80 backdrop-blur-sm transition-all hover:scale-105 hover:border-zinc-400 hover:bg-white dark:border-zinc-700 dark:bg-zinc-900/80 dark:hover:border-zinc-600 dark:hover:bg-zinc-900"
+                            >
+                                Contact Me
+                                <MailIcon className="ml-1 transition-transform group-hover:scale-110" />
+                            </Button>
+                        </Link>
                     </div>
 
                     {/* Social Links */}
@@ -68,7 +71,7 @@ export function HeroSection() {
                         <SocialLink
                             icon={GithubIcon}
                             label="GitHub"
-                            href="https://github.com/ra"
+                            href="https://github.com/rahulxiao"
                         />
 
                         <SocialLink
@@ -81,7 +84,7 @@ export function HeroSection() {
                         <SocialLink
                             icon={MailIcon}
                             label="Email"
-                            href="mailto:your.email@example.com"
+                            href="mailto:rahulbiswasaiub@gmail.com"
                             hoverColor="purple"
                         />
                     </div>

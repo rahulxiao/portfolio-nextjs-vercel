@@ -12,32 +12,32 @@ import {
 export function SkillsSection() {
     const skillCategories = [
         {
-            title: "Frontend",
-            icon: LayoutIcon,
-            skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+            title: "Languages",
+            icon: Code2Icon,
+            skills: ["JavaScript", "TypeScript", "Python", "PHP", "Kotlin", "C++", "C#", "Java"],
             color: "text-blue-500",
             bg: "bg-blue-500/10",
         },
         {
-            title: "Backend",
+            title: "Frontend & Mobile",
+            icon: LayoutIcon,
+            skills: ["React", "Next.js", "Tailwind CSS", "React Native", "Android (Kotlin)"],
+            color: "text-purple-500",
+            bg: "bg-purple-500/10",
+        },
+        {
+            title: "Backend & DB",
             icon: DatabaseIcon,
-            skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Prisma"],
+            skills: ["NestJS", "Node.js", "PostgreSQL", "MySQL", "TypeORM"],
             color: "text-green-500",
             bg: "bg-green-500/10",
         },
         {
-            title: "Tools & Devops",
+            title: "Game Dev & Tools",
             icon: TerminalIcon,
-            skills: ["Git", "Docker", "AWS", "Vercel", "Linux"],
+            skills: ["Unreal Engine 5", "Blueprints", "Git & GitHub", "Diversion"],
             color: "text-orange-500",
             bg: "bg-orange-500/10",
-        },
-        {
-            title: "Design",
-            icon: PaletteIcon,
-            skills: ["Figma", "Adobe XD", "UI/UX", "Responsive Design", "Color Theory"],
-            color: "text-purple-500",
-            bg: "bg-purple-500/10",
         },
     ];
 

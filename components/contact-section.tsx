@@ -9,8 +9,8 @@ export function ContactSection() {
         {
             icon: MailIcon,
             title: "Email",
-            value: "rahul.biswas@example.com",
-            href: "mailto:rahul.biswas@example.com",
+            value: "rahulbiswasaiub@gmail.com",
+            href: "mailto:rahulbiswasaiub@gmail.com",
             color: "text-blue-500",
             bg: "bg-blue-500/10",
             hoverBg: "group-hover:bg-blue-600",
@@ -18,17 +18,17 @@ export function ContactSection() {
         {
             icon: PhoneIcon,
             title: "Phone",
-            value: "+880 1234 567 890",
+            value: "+880 1234 567 890", // Kept mask as user didn't provide phone
             href: "tel:+8801234567890",
             color: "text-emerald-500",
             bg: "bg-emerald-500/10",
             hoverBg: "group-hover:bg-emerald-600",
         },
         {
-            icon: MessageSquareIcon,
-            title: "Support",
-            value: "Live Chat Available",
-            href: "#",
+            icon: GithubIcon,
+            title: "GitHub",
+            value: "github.com/rahulxiao",
+            href: "https://github.com/rahulxiao",
             color: "text-purple-500",
             bg: "bg-purple-500/10",
             hoverBg: "group-hover:bg-purple-600",

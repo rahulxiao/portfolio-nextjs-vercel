@@ -111,10 +111,10 @@ export function Footer() {
                             Connect
                         </h4>
                         <div className="flex flex-wrap gap-3">
-                            <SocialLink icon={GithubIcon} label="GitHub" href="https://github.com" />
+                            <SocialLink icon={GithubIcon} label="GitHub" href="https://github.com/rahulxiao" />
                             <SocialLink icon={LinkedinIcon} label="LinkedIn" href="https://linkedin.com" />
                             <SocialLink icon={TwitterIcon} label="Twitter" href="https://twitter.com" />
-                            <SocialLink icon={MailIcon} label="Email" href="mailto:rahul@example.com" />
+                            <SocialLink icon={MailIcon} label="Email" href="mailto:rahulbiswasaiub@gmail.com" />
                         </div>
 
                         <div className="mt-8 text-sm">
