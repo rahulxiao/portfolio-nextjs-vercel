@@ -9,19 +9,19 @@ export function TestimonialsSection() {
             name: "Alex Johnson",
             role: "CEO at TechStart",
             content: "Rahul is an exceptional developer. He took our vision and turned it into a reality with incredible speed and precision. His attention to detail is unmatched.",
-            image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&h=100&auto=format&fit=crop",
+            image: "/image/allimage.png",
         },
         {
             name: "Sarah Williams",
             role: "Product Manager",
             content: "Working with Rahul was a breeze. He's not only a great coder but also a fantastic communicator. He consistently delivered high-quality work on time.",
-            image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&h=100&auto=format&fit=crop",
+            image: "/image/allimage.png",
         },
         {
             name: "David Chen",
             role: "Founder of CreativeFlow",
             content: "The best developer I've hired in years. Rahul's ability to solve complex technical problems while keeping UX at the forefront is truly impressive.",
-            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&h=100&auto=format&fit=crop",
+            image: "/image/allimage.png",
         },
     ];
 

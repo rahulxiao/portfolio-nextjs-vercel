@@ -13,7 +13,7 @@ export function ProjectsSection() {
             tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
             github: "https://github.com/rahulxiao",
             demo: "https://example.com",
-            image: "",
+            image: "/image/allimage.png",
         },
         {
             title: "Task Management App",
@@ -21,7 +21,7 @@ export function ProjectsSection() {
             tags: ["React", "Node.js", "Socket.io", "MongoDB"],
             github: "https://github.com",
             demo: "https://example.com",
-            image: "",
+            image: "/image/allimage.png",
         },
         {
             title: "Portfolio Website",
@@ -29,7 +29,7 @@ export function ProjectsSection() {
             tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
             github: "https://github.com",
             demo: "https://example.com",
-            image: "",
+            image: "/image/allimage.png",
         },
     ];
 

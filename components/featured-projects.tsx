@@ -14,7 +14,7 @@ export function FeaturedProjects() {
             tags: ["Next.js", "TypeScript", "Stripe"],
             github: "https://github.com/rahulxiao",
             demo: "https://example.com",
-            image: "",
+            image: "/image/allimage.png",
         },
         {
             title: "Task Management App",
@@ -22,7 +22,7 @@ export function FeaturedProjects() {
             tags: ["React", "Node.js", "Socket.io"],
             github: "https://github.com",
             demo: "https://example.com",
-            image: "",
+            image: "/image/allimage.png",
         },
     ];
 
